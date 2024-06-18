@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshify</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#farmers">Farmers</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#prices">Prices</a></li>
+            </ul>
+        </nav>
+        <h1 class="ostrich-title">Freshify</h1>
+    </header>
+    <main>
+        <section id="map">
+            <h2>Search Farmers by Location</h2>
+            <div id="map-container"></div>
+        </section>
+        <section id="farmers">
+            <h2>Nearby Farmers</h2>
+            <div id="farmer-images"></div>
+            <ul id="farmer-list"></ul>
+        </section>
+        <section id="products">
+            <h2>Explore Daily</h2>
+            <div id="product-images"></div>
+        </section>
+        <section id="prices">
+            <h2>The best prices this week:</h2>
+            <table id="price-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Prices will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
